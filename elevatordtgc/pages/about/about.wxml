@@ -1,0 +1,70 @@
+<!--pages/user/dingdan.wxmldisplay: flex-->
+<import src="../../wxParse/wxParse.wxml" />
+<view class="swiper-tab">
+
+  <scroll-view scroll-x="true" class="scr" >
+
+    <view class="tab-left" >
+    
+      <view class="{{tabArr.curHdIndex==index ? 'active' : ''}} ah" data-id="{{item.id}}" data-key="{{index}}" wx:for="{{list}}" bindtap="tabFun"  >
+          {{item.ename}}
+       <text style='display:block;font-size:20rpx;'>{{item.uname}}</text> 
+      </view>
+
+      
+
+    </view>
+
+  </scroll-view>
+
+</view>
+
+
+<view class="c_t60"></view>
+
+<view class="tab-right">
+  <!--内容区-->
+  
+  <view class="right-item {{tabArr.curHdIndex==0 ? 'active' : ''}}">
+    <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:content_1.nodes}}" />
+    </view>
+  </view>
+
+  <view class="right-item {{tabArr.curHdIndex==1 ? 'active' : ''}}">
+    <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:content_2.nodes}}" />
+    </view>
+  </view>
+
+  <view class="right-item {{tabArr.curHdIndex==2 ? 'active' : ''}}">
+    <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:content_3.nodes}}" />
+    </view>
+  </view>
+
+  <view class="right-item {{tabArr.curHdIndex==3 ? 'active' : ''}}">
+    <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:content_4.nodes}}" />
+    </view>
+  </view>
+
+  <view class="right-item {{tabArr.curHdIndex==4 ? 'active' : ''}}">
+    <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:content_5.nodes}}" />
+    </view>
+  </view>
+
+  <view class="right-item {{tabArr.curHdIndex==5 ? 'active' : ''}}">
+    <view class="wxParse">
+      <template is="wxParse" data="{{wxParseData:content_6.nodes}}" />
+    </view>
+  </view>
+
+
+
+  <!--内容区-->
+ 
+</view>
+
+

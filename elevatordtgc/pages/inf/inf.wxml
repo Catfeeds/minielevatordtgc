@@ -1,0 +1,23 @@
+<!--新闻资讯列表-->
+  <view class="headLine box box-tb">
+    <navigator url="../news/news?newsid={{item.id}}" class="headLineWra box box-lr"  wx:for="{{newslist}}" >
+      <view class="headLineContent box box-tb box-align-center box-pack-around">
+        <view class="headLineTitle">
+          {{item.name}}
+        </view>
+        <view class="headLineInfor  box box-lr box-pack-between">
+          <view class="headLineSource">
+            Date: {{item.addtime}}
+          </view>
+          <view class="headLineSource">
+            From：{{item.from}}
+          </view>
+        </view>
+      </view>
+      <view class="arrowsBox box box-tb box-pack-center">
+        <image src="{{item.photo}}"></image>
+      </view>
+    </navigator>
+  </view>
+  <!--加载更多-->
+  <view class="clear mt10" bindtap="getMore" wx:if="{{newslist}}">More</view>

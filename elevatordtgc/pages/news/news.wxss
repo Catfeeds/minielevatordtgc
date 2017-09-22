@@ -1,0 +1,21 @@
+.biaoti{
+    text-align: center;
+    padding: 10rpx 50rpx;
+    font-weight: 700;
+    line-height: 50rpx;
+}
+.riqi{
+    margin-left: 20rpx;
+    text-align: center;
+    font-size: 28rpx;
+    color: #ccc;
+}
+.news{
+    padding: 0rpx 3rpx;
+}
+images{
+  width: 100%;
+}
+.nei{
+    text-indent: 70rpx
+}
