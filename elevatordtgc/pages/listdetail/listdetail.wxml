@@ -7,9 +7,9 @@
 </view>
 
 <view class="c_t60"></view>
-<view>
+<view wx:for="{{prolist}}">
 <navigator  url="../detail/detail?productId={{item.id}}" hover-class="changestyle">
-    <view class="shop df" wx:for="{{prolist}}">        
+    <view class="shop df" >        
         <image class="sh_slt" src="{{item.photo_x}}"></image>
         <view class="video" wx:if="{{item.v_type==1}}">
             <image src="/images/viedo.png"></image>

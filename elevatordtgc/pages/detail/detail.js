@@ -99,7 +99,8 @@ Page({
     };
   },
   // 传值
-  onLoad: function (option) {     
+  onLoad: function (option) {
+    console.log(option)     
     //this.initNavHeight();
     var that = this;
     that.setData({
